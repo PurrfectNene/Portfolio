@@ -27,7 +27,7 @@ function Footer() {
           >
             <i className="bi bi-linkedin"></i>
           </a>
-          </span>
+        </span>
       </div>
     </div>
   );

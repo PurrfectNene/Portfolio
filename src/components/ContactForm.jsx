@@ -29,14 +29,22 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="to_name" />
-      <label>Email</label>
-      <input type="email" name="from_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+    <form className="Contactform" ref={form} onSubmit={sendEmail}>
+      <div>
+        <label>Name</label>
+        <input type="text" name="to_name" />
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" name="from_email" />
+      </div>
+      <div>
+        <label>Message</label>
+        <textarea name="message" />
+      </div>
+      <div>
+        <input type="submit" value="Send" />
+      </div>
     </form>
   );
 };
