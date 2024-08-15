@@ -21,7 +21,7 @@ export default function Home() {
       />
 
       <div>
-        <img src="/Images/hello-cats.png" style={{ width: "40%" }} />
+        <img src="/Images/hello-cats.png" style={{ width: "30%" }} />
       </div>
     </div>
   );
