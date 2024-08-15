@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'hey-comic';
+    src: url('../../public/Fonts/hey-comic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.introduction {
+margin-top: 10%;
+}

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "hey-comic";
+  src: url("../../public/Fonts/hey-comic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.projects-list {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.my-project-text {
+  width: 40%;
+}
+
+.project-style {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: hey-comic;
+}
+
+.project-card {
+  margin-top: 5%;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 1%;
+  border-radius: 8px;
+  max-width: 400px; /*max card width*/
+  height: 100%;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

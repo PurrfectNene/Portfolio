@@ -4,21 +4,21 @@ import Introduction from "./components/Introduction";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
+import ProjectCards from "./components/ProjectCards";
 
 function App() {
   return (
     <>
-      <div>
-        <Navbar />
-      </div>
-
-      <div>
+<div>
         <Introduction />
       </div>
 
-      <div className="App">
-        <h1>Contact me:</h1>
-        <ContactForm />
+      <div>
+        <ProjectCards/>
+      </div>
+
+      <div>
+        <ContactForm/>
       </div>
 
       <div>
