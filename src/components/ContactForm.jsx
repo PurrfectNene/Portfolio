@@ -1,30 +1,35 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css"
+import ReactiveButton from 'reactive-button';
+
 
 const ContactForm = () => {
+
+  const [state, setState] = useState('idle');
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log(import.meta.env);
+    setState('loading');
 
     emailjs
       .sendForm(
         import.meta.env.VITE_APP_SERVICE_ID,
         import.meta.env.VITE_APP_TEMPLATE_ID,
         form.current,
-        {
-          publicKey: import.meta.env.VITE_APP_PUBLIC_KEY,
-        }
+        import.meta.env.VITE_APP_PUBLIC_KEY
       )
       .then(
         () => {
           console.log("SUCCESS!");
+          setState('success');
+          form.current.reset(); //form field reset
         },
         (error) => {
           console.log("FAILED...", error.text);
+          setState('error');
         }
       );
   };
@@ -32,24 +37,31 @@ const ContactForm = () => {
   return (
     <div className="contact-form">
       <h1>
-     <img className="contact-me-text" src="../../public/Images/contact-me.png" alt="contact-me"/>
+        <img className="contact-me-text" src="../../public/Images/contact-me.png" alt="contact-me"/>
       </h1>
 
       <form ref={form} onSubmit={sendEmail}>
         <div>
           <label>Name</label>
-          <input type="text" name="to_name" />
+          <input type="text" name="to_name" required />
         </div>
         <div>
           <label>Email</label>
-          <input type="email" name="from_email" />
+          <input type="email" name="from_email" required />
         </div>
         <div>
           <label>Message</label>
-          <textarea name="message" />
+          <textarea name="message" required />
         </div>
         <div>
-          <input type="submit" value="Send" />
+          <ReactiveButton
+            buttonState={state}
+            color="primary"
+            idleText="Send"
+            loadingText="Sending..."
+            successText="Sent!"
+            type="submit"
+          />
         </div>
       </form>
     </div>
