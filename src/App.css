@@ -3,8 +3,11 @@
   margin: 0 auto;
   padding: 0% 1% 0% 1%;
   text-align: center;
-  background-color: #EFEFFB;
-}
+  /* background-color: #EFEFFB; */
+  background-image: url('../public/Images/background.jpg');
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the background image */}
 
 .logo {
   height: 6em;

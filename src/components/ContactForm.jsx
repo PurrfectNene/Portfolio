@@ -34,13 +34,17 @@ const ContactForm = () => {
       );
   };
 
-  return (
-    <div className="contact-form">
-      <h1>
-        <img className="contact-me-text" src="../../public/Images/contact-me.png" alt="contact-me"/>
-      </h1>
 
-      <form ref={form} onSubmit={sendEmail}>
+  return (
+  <div>
+    
+    <div className="contact-me-text">
+    <img src="../../public/Images/contact-me.png" alt="contact-me" />
+    </div>
+
+
+<div className="contact-form">
+    <form ref={form} onSubmit={sendEmail}>
         <div>
           <label>Name</label>
           <input type="text" name="to_name" required />
@@ -53,8 +57,9 @@ const ContactForm = () => {
           <label>Message</label>
           <textarea name="message" required />
         </div>
-        <div>
-          <ReactiveButton
+
+  <div className="send-button">
+  <ReactiveButton
             buttonState={state}
             color="primary"
             idleText="Send"
@@ -62,8 +67,9 @@ const ContactForm = () => {
             successText="Sent!"
             type="submit"
           />
-        </div>
+    </div>
       </form>
+    </div>
     </div>
   );
 };
