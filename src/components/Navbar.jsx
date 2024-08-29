@@ -1,9 +1,10 @@
-import React from "react";
+import { useState } from "react";
+
 
 export default function Navbar() {
   return (
     <div>
-      <button>This is the Navbar</button>
+      <h1>THIS IS NAVBAR</h1>
     </div>
   );
 }

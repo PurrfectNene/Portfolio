@@ -7,23 +7,21 @@ import ContactForm from "./components/ContactForm";
 import ProjectCards from "./components/ProjectCards";
 
 function App() {
-
   return (
     <>
-
-    <div>
-
-    </div>
-<div>
+      <div>
+        <Navbar />
+      </div>
+      <div>
         <Introduction />
       </div>
 
       <div>
-        <ProjectCards/>
+        <ProjectCards />
       </div>
 
       <div>
-        <ContactForm/>
+        <ContactForm />
       </div>
 
       <div>

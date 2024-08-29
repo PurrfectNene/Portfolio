@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { TypeAnimation } from "react-type-animation";
-import "./Introduction.css"
+import "./Introduction.css";
 
 export default function Home() {
   return (
@@ -17,7 +17,12 @@ export default function Home() {
         ]}
         wrapper="span"
         speed={50}
-        style={{ fontSize: "500%", display: "inline-block", color: "#9f81f7", fontFamily: "hey-comic" }}
+        style={{
+          fontSize: "500%",
+          display: "inline-block",
+          color: "#9f81f7",
+          fontFamily: "hey-comic",
+        }}
         repeat={Infinity}
       />
 
