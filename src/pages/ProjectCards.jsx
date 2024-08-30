@@ -1,7 +1,15 @@
 import projectsData from "../projects.json";
 import "./ProjectCards.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Input } from "antd";
+import reactImg from '../Icons/react.gif'
+
+const techImages = {
+  "React": reactImg,
+  // "CSS": cssImg,
+  // "JavaScript": javascriptImg,
+};
+
 
 function ProjectCards() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -39,14 +47,36 @@ function ProjectCards() {
             />
             <h2>{project.project_name}</h2>
             {/* <p><strong>Date:</strong> {new Date(project.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }).replace(' ', '-')}</p>
-            <p>{project.description}</p>
-            <p><strong>Technologies used:</strong> {project.technologies.join(", ")}</p> */}
+            <p>{project.description}</p> */}
+
+
+            <p>
+              <strong>Technologies:</strong>
+              <div className="technologies">
+                {project.technologies.map((tech, idx) => (
+                  <div className="technology" key={idx}>
+                    {techImages[tech] ? (
+                      <img
+                        src={techImages[tech]}
+                        alt={tech}
+                        style={{ width: '30px', height: '30px', marginRight: '5px' }}
+                      />
+                    ) : (
+                      <span>{tech}</span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </p>
+
+                    
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               Visit the project
             </a>
           </div>
         ))}
       </div>
+
     </div>
   );
 }

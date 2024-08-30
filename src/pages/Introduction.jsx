@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { TypeAnimation } from "react-type-animation";
 import "./Introduction.css";
+import { Footer } from "rsuite";
+
 
 export default function Home() {
   return (
@@ -29,6 +31,7 @@ export default function Home() {
       <div>
         <img src="/Images/hello-cats.png" style={{ width: "50%" }} />
       </div>
+
     </div>
   );
 }

@@ -66,3 +66,23 @@
   height: auto;
   border-radius: 8px;
 }
+
+/* New CSS for technologies section */
+.technologies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icons */
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  margin-top: 10px; /* Space above the technologies row */
+}
+
+.technology {
+  display: flex;
+  align-items: center;
+}
+
+.tech-icon {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+}

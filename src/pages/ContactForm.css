@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "hey-comic";
+  src: url("../../public/Fonts/hey-comic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  /* background-color: #f5f5f5;
+  padding: 20px;
+  font-family: 'hey-comic', sans-serif; */
+}
+
+.contact-form {
+  /* background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); */
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.name-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.name, .email {
+  flex: 1;
+}
+
+.name input, .email input, .message-field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-family: 'hey-comic', sans-serif;
+}
+
+.message-field textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.send-button {
+  display: flex;
+  justify-content: center;
+}
+
+.send-button button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button button:hover {
+  background-color: #0073e6;
+}
+
+@media (max-width: 600px) {
+  .name-email {
+    flex-direction: column;
+    gap: 0;
+  }
+}
