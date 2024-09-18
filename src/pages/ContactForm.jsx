@@ -35,6 +35,7 @@ export default function ContactForm() {
     }, 2000);
   };
 
+  
   return (
     <div className="contact-form-container">
       {/* Location Section on the Left */}
@@ -74,7 +75,7 @@ export default function ContactForm() {
         </div>
 
         <div className="message-field">
-          <textarea name="message" placeholder="Your Message" required />
+          <textarea name="message" placeholder="Send your question here—I'm ready to impress!" required />
         </div>
 
         <div className="send-button">

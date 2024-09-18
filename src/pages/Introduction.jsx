@@ -3,15 +3,14 @@ import { TypeAnimation } from "react-type-animation";
 import "./Introduction.css";
 import { Footer } from "rsuite";
 
-
 export default function Home() {
   return (
+    <>
     <div className="introduction">
       <TypeAnimation
         sequence={[
-          // Same substring at the start will only be typed out once, initially
           "Hi, my name is Irene",
-          2000, // wait 1s before replacing "Mice" with "Hamsters"
+          2000, 
           "I am a Full Stack Web Developer",
           2000,
           "Welcome to my website",
@@ -27,11 +26,11 @@ export default function Home() {
         }}
         repeat={Infinity}
       />
-
-      <div>
-        <img src="/Images/hello-cats.png" style={{ width: "50%" }} />
       </div>
 
-    </div>
+
+        <img className="hello-cats" src="/Images/hello-cats.png" alt="hello-cats"/>
+      
+  </> 
   );
 }

@@ -1,25 +1,20 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import './App.css'; // Ensure this file is correctly linked
-import Introduction from './pages/Introduction';
-import ProjectCards from './pages/ProjectCards';
-import ContactForm from './pages/ContactForm';
-import Footer from './components/Footer';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import "./App.css";
+import Introduction from "./pages/Introduction";
+import ProjectCards from "./pages/ProjectCards";
+import ContactForm from "./pages/ContactForm";
+import Footer from "./components/Footer";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Sidenav from "./components/Sidenav";
+
 
 function App() {
   return (
     <Router>
       <div className="app-container">
-        {/* Sidebar Navigation */}
-        <div className="sidenav">
-          <Link to="/">Home</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact-me">Contact me</Link>
-        </div>
-
-        {/* Main content and Footer container */}
+      <Sidenav/>
         <div className="main-footer-container">
-          {/* Main Content */}
           <div className="main-content">
             <Routes>
               <Route path="/" element={<Introduction />} />
@@ -29,7 +24,6 @@ function App() {
             </Routes>
           </div>
 
-          {/* Footer */}
           <Footer />
         </div>
       </div>
@@ -38,5 +32,3 @@ function App() {
 }
 
 export default App;
-
-

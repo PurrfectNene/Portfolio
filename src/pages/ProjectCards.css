@@ -25,7 +25,7 @@
 }
 
 .search-bar input {
-  width: 100%;
+  width: 500px;
   max-width: 600px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -67,14 +67,14 @@
   border-radius: 8px;
 }
 
-/* New CSS for technologies section */
+
 .technologies {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Space between icons */
-  flex-wrap: nowrap; /* Prevent wrapping to the next line */
-  margin-top: 10px; /* Space above the technologies row */
+  gap: 10px; 
+  flex-wrap: nowrap; 
+  margin-top: 10px; 
 }
 
 .technology {
@@ -83,6 +83,6 @@
 }
 
 .tech-icon {
-  width: 30px; /* Adjust size as needed */
-  height: 30px; /* Adjust size as needed */
+  width: 30px; 
+  height: 30px; 
 }
