@@ -54,6 +54,7 @@
   max-width: 400px;
   height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
 }
 
 .project-card:hover {

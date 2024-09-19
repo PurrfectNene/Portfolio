@@ -24,7 +24,7 @@
 
 .location h3 {
   margin-bottom: 10px;
-  font-family: "hey-comic", sans-serif;
+  font-family: "Comic Sans MS";
 }
 
 .location p {
@@ -70,7 +70,7 @@
   font-size: 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
-  font-family: "hey-comic", sans-serif;
+  font-family: "hey-comic";
 }
 
 .message-field textarea {

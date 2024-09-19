@@ -1,4 +1,3 @@
-/* Sidebar Navigation */
 .sidenav {
   height: 100vh;
   width: 250px;
@@ -6,6 +5,8 @@
   top: 0;
   left: 0;
   background-image: url("/Images/background.jpg");
+  background-size: cover;
+  background-position: center;
   overflow-x: hidden;
   z-index: 1;
   display: flex;
@@ -20,10 +21,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px; /* Aggiunge uno spazio sopra l'avatar */
 }
 
+.avatar {
+  width: 80%; /* Dimensione massima dell'avatar */
+  object-fit: cover; /* Assicura che l'immagine sia contenuta */
+  border-radius: 50%; /* Rende l'avatar circolare */
+  background-color: #4b0082;
+}
 
-/* Sidebar links */
+.icons-sidenav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Spazio tra le icone */
+}
+
+.icons-sidenav a {
+  font-size: 150%; /* Dimensione icone */
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
 .links {
   display: flex;
   flex-direction: column;
@@ -38,32 +58,18 @@
   margin-bottom: 100px;
 }
 
-.links a:hover {
-  color: purple;
-  transform: scale(1.1); 
-}
-
-a {
+.links a {
   font-weight: 700;
   color: #4b0082;
   text-decoration: inherit;
 }
-a:hover {
-  color: #4b0082;
+
+.links a:hover {
+  color: purple;
+  transform: scale(1.1);
 }
 
-
-.icons-sidenav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px; /* space between icons */
-}
-
-.icons-sidenav a {
-  font-size: 30px; /* Icon size */
-  transition: color 0.3s;
+a {
   text-decoration: none;
 }
-
 

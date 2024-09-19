@@ -76,7 +76,7 @@ export default function ContactForm() {
         <div className="message-field">
           <textarea
             name="message"
-            placeholder="Send your question here—I'm ready to impress!"
+            placeholder="Write your message here!"
             required
           />
         </div>

@@ -18,12 +18,6 @@ export default function Home() {
           ]}
           wrapper="span"
           speed={50}
-          style={{
-            fontSize: "400%",
-            display: "inline-block",
-            color: "#4B0082",
-            fontFamily: "hey-comic",
-          }}
           repeat={Infinity}
         />
       </div>

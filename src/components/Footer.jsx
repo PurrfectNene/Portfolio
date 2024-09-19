@@ -10,7 +10,7 @@ function Footer() {
         <p
           className="rights-footer"
           style={{
-            fontFamily: "Hey-comic, sans-serif",
+            fontFamily: "Hey-comic",
             fontSize: "1.1rem", // Adjust font size
             color: "black",
             margin: "0", // Reset margin if needed

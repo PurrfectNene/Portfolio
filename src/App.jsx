@@ -13,17 +13,18 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-      <Sidenav/>
+        <div className="sidenav-container">
+          <Sidenav />
+        </div>
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Introduction />} />
+            <Route path="/projects" element={<ProjectCards />} />
+            <Route path="/contact-me" element={<ContactForm />} />
+            {/* <Route path="*" element={<NotFound />} /> 404 Page */}
+          </Routes>
+        </div>
         <div className="main-footer-container">
-          <div className="main-content">
-            <Routes>
-              <Route path="/" element={<Introduction />} />
-              <Route path="/projects" element={<ProjectCards />} />
-              <Route path="/contact-me" element={<ContactForm />} />
-              {/* <Route path="*" element={<NotFound />} /> 404 Page */}
-            </Routes>
-          </div>
-
           <Footer />
         </div>
       </div>
@@ -32,3 +33,4 @@ function App() {
 }
 
 export default App;
+
