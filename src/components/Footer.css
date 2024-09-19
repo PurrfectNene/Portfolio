@@ -1,9 +1,22 @@
-footer {
-  background-color: #f1f1f1;
+.footer {
   text-align: center;
   width: 100%;
+  padding-bottom: 5px;
 }
 
-.rights-footer a {
-  margin: 8px;
+.content-footer {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Align items vertically */
+ /* Adjust space between text and icons */
 }
+
+.text-footer {
+  color: black;
+}
+
+.icons-footer {
+  display: flex;
+  align-items: center; /* Align icons vertically with the text */
+}
+

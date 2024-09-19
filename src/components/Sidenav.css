@@ -1,51 +1,69 @@
 /* Sidebar Navigation */
 .sidenav {
-    height: 100vh;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-image: url('/Images/background.jpg');
-    overflow-x: hidden;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding-top: 20px; 
-  }
-  
-.avatar-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("/Images/background.jpg");
+  overflow-x: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
-  /* .avatar {
-    width: 60%; 
-    border-radius: 50%; 
-    margin-bottom: auto;
-    display: block; 
-    align-self: center; 
-  } */
-  
-  /* Sidebar links */
-  .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000080;
-    transition: 0.3s;
-    width: 100%;
-    flex-grow: 1;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Sidebar links */
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+  width: 100%;
+  flex-grow: 1;
+  margin-bottom: 100px;
+}
+
+.links a:hover {
+  color: purple;
+  transform: scale(1.1); 
+}
+
+a {
+  font-weight: 700;
+  color: #4b0082;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #4b0082;
+}
+
+
+.icons-sidenav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* space between icons */
+}
+
+.icons-sidenav a {
+  font-size: 30px; /* Icon size */
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+

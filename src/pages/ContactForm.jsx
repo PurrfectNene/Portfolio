@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
 import ReactiveButton from "reactive-button";
 import "./ContactForm.css";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 export default function ContactForm() {
   const form = useRef();
-  const [state, setState] = useState('idle');
+  const [state, setState] = useState("idle");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,7 +35,6 @@ export default function ContactForm() {
     }, 2000);
   };
 
-  
   return (
     <div className="contact-form-container">
       {/* Location Section on the Left */}
@@ -49,8 +48,8 @@ export default function ContactForm() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-        <h3>Location:</h3>
-        <p>Amsterdam, Netherlands, NH</p>
+        <h6 style={{color: "#4B0082", fontFamily: "Hey-comic"}}>Location: Amsterdam, Netherlands, NH</h6>
+        {/* <p style={{color: "#4B0082", fontFamily: "Hey-comic"}}>Amsterdam, Netherlands, NH</p> */}
       </div>
 
       {/* Contact Form Section on the Right */}
@@ -75,7 +74,11 @@ export default function ContactForm() {
         </div>
 
         <div className="message-field">
-          <textarea name="message" placeholder="Send your question here—I'm ready to impress!" required />
+          <textarea
+            name="message"
+            placeholder="Send your question here—I'm ready to impress!"
+            required
+          />
         </div>
 
         <div className="send-button">
