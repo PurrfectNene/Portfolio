@@ -13,8 +13,7 @@ function Footer() {
             fontFamily: "Hey-comic",
             fontSize: "1.1rem", // Adjust font size
             color: "black",
-            margin: "0", // Reset margin if needed
-            padding: "10px", // Optional padding
+            margin: "0", // Align with icons
           }}
         >
           © All rights reserved | 2024 | Find me on
@@ -26,7 +25,7 @@ function Footer() {
             rel="noopener noreferrer"
             style={{
               color: "black",
-              fontSize: "1.5rem", // Adjust font size for icons
+              fontSize: "1.5rem", // Font size for icons
               margin: "0 10px", // Space between icons
               textDecoration: "none", // Remove underline
             }}
@@ -39,9 +38,9 @@ function Footer() {
             rel="noopener noreferrer"
             style={{
               color: "DodgerBlue",
-              fontSize: "1.5rem", // Adjust font size for icons
-              margin: "0 10px", // Space between icons
-              textDecoration: "none", // Remove underline
+              fontSize: "1.5rem",
+              margin: "0 10px",
+              textDecoration: "none",
             }}
           >
             <i className="bi bi-linkedin" />

@@ -7,7 +7,7 @@ import ContactForm from "./pages/ContactForm";
 import Footer from "./components/Footer";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Sidenav from "./components/Sidenav";
-
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
             <Route path="/" element={<Introduction />} />
             <Route path="/projects" element={<ProjectCards />} />
             <Route path="/contact-me" element={<ContactForm />} />
-            {/* <Route path="*" element={<NotFound />} /> 404 Page */}
+            <Route path="*" element={<NotFound />} /> 404 Page
           </Routes>
         </div>
         <div className="main-footer-container">
@@ -33,4 +33,3 @@ function App() {
 }
 
 export default App;
-

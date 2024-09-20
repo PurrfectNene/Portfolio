@@ -34,7 +34,7 @@ function ProjectCards() {
   );
 
   const handleViewMore = (projectName) => {
-    const project = projectsData.find(p => p.project_name === projectName);
+    const project = projectsData.find((p) => p.project_name === projectName);
     setSelectedProject(project);
   };
 
@@ -45,7 +45,8 @@ function ProjectCards() {
   return (
     <div>
       {/* SEARCH BAR LOGIC */}
-      {/* <div className="search-bar-container">
+      {/* 
+      <div className="search-bar-container">
         <div className="search-bar">
           <Input
             type="text"
@@ -54,7 +55,8 @@ function ProjectCards() {
             onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
-      </div> */}
+      </div> 
+      */}
 
       <div className="project-style">
         {filteredProjects.map((project, index) => (
@@ -100,7 +102,7 @@ function ProjectCards() {
         ))}
       </div>
 
-      {/* Modal for project details */}
+      {/* Modal */}
       {selectedProject && (
         <div className="modal-overlay">
           <div className="modal-content">
@@ -116,14 +118,22 @@ function ProjectCards() {
               style={{ width: "100%" }} 
             />
             </a> */}
-            <p style={{fontWeight: "500"}}><div 
-              className="modal-description"
-              dangerouslySetInnerHTML={{ __html: selectedProject.description }}
-            /></p>
+            <p style={{ fontWeight: "500" }}>
+              <div
+                className="modal-description"
+                dangerouslySetInnerHTML={{
+                  __html: selectedProject.description,
+                }}
+              />
+            </p>
             <div>
-            <button className="project-link" style={{width: "250px", textAlign: "center"}} onClick={() => window.open(selectedProject.link, "_blank")}>
-              Visit Project
-            </button>
+              <button
+                className="project-link"
+                style={{ width: "250px", textAlign: "center" }}
+                onClick={() => window.open(selectedProject.link, "_blank")}
+              >
+                Visit Project
+              </button>
             </div>
           </div>
         </div>
@@ -133,4 +143,3 @@ function ProjectCards() {
 }
 
 export default ProjectCards;
-

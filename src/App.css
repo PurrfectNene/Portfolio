@@ -20,29 +20,29 @@ body {
   height: 100%;
   width: 100%;
   font-size: 16px;
-  overflow-x: hidden; /* Previene il contenuto dall'andare oltre la larghezza della finestra */
+  overflow-x: hidden; /* Keep content within the window space */
 }
 
 .app-container {
   display: flex;
   min-height: 100vh;
-  width: 100%; /* Assicura che prenda tutta la larghezza */
-  overflow-x: hidden; /* Previene overflow orizzontale */
+  width: 100%;
+  overflow-x: hidden; /* prevent overflow orizzontally */
 }
 
-/* Fix Sidenav to the left */
+/* Fixing Sidenav to the left */
 .sidenav-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px; /* Larghezza della Sidenav */
+  width: 250px; /* Sidenav width */
   height: 100%;
   z-index: 1;
-  overflow-x: hidden; /* Assicura che non ci siano overflow laterali */
+  overflow-x: hidden; /* Ensure that there are no horizontal overflows. */
 }
 
 .main-content {
-  margin-left: 250px; /* Spazio per la Sidenav */
+  margin-left: 250px; /* Sidenav space */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,9 +50,11 @@ body {
   flex: 1;
   padding: 20px;
   text-align: center;
-  min-height: calc(100vh - 50px); /* Spazio riservato per il footer */
-  width: calc(100% - 250px); /* Assicura che prenda tutto lo spazio rimanente accanto alla Sidenav */
-  box-sizing: border-box; /* Includi padding e margini nel calcolo della larghezza */
+  min-height: calc(100vh - 50px); /* Footer space */
+  width: calc(
+    100% - 250px
+  ); /* Ensure that it takes up all the remaining space next to the Sidenav */
+  box-sizing: border-box; /* Include padding and margins in the width calculation */
 }
 
 /* Footer aligned to the bottom and centered */
@@ -60,11 +62,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(100% - 250px); /* Sottrai la larghezza della Sidenav per allineare il footer con il main-content */
+  width: calc(
+    100% - 250px
+  ); /* Subtract the width of the Sidenav to align the footer with the main content. */
   position: fixed;
   bottom: 0;
-  left: 250px; /* Allinea il footer dopo la Sidenav */
-  height: 50px; /* Altezza del footer */
-
-  box-sizing: border-box; /* Includi padding e margini nel calcolo della larghezza */
+  left: 250px; /* Align the footer after the Sidenav. */
+  height: 50px; /* footer height */
+  box-sizing: border-box; /* Include padding and margins in the width calculation. */
 }

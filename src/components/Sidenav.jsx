@@ -9,7 +9,8 @@ function Sidenav() {
           <img className="avatar" src="public/Images/Avatar.png" />
         </div>
 
-        <div className="icons-sidenav">
+        {/* 
+        { <div className="icons-sidenav">
           <a
             href="https://github.com/PurrfectNene"
             target="_blank"
@@ -26,7 +27,9 @@ function Sidenav() {
           >
             <i className="bi bi-linkedin"></i>
           </a>
-        </div>
+        </div> } 
+        */}
+        
       </div>
 
       <div className="links">

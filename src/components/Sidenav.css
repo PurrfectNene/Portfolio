@@ -21,25 +21,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Aggiunge uno spazio sopra l'avatar */
+  margin-top: 20px; /* Add space under the Avatar */
 }
 
 .avatar {
-  width: 80%; /* Dimensione massima dell'avatar */
-  object-fit: cover; /* Assicura che l'immagine sia contenuta */
-  border-radius: 50%; /* Rende l'avatar circolare */
-  background-color: #4b0082;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+  background-image: url("../../public/Images/background10.jpg");
 }
 
 .icons-sidenav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px; /* Spazio tra le icone */
+  gap: 15px; /* Space between icons */
 }
 
 .icons-sidenav a {
-  font-size: 150%; /* Dimensione icone */
+  font-size: 150%; /* Icon size */
   transition: color 0.3s;
   text-decoration: none;
 }
@@ -72,4 +72,3 @@
 a {
   text-decoration: none;
 }
-

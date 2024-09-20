@@ -87,7 +87,7 @@
   height: 30px;
 }
 
-/* Modal Styles */
+/* Modal Style */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -104,10 +104,10 @@
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  width: 80%; 
-  max-width: 600px; 
-  max-height: 80vh; 
-  overflow-y: auto; /* Added vertical scrollbar */
+  width: 80%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto; /* Vertical scrollbar */
   position: relative;
 }
 
@@ -144,7 +144,7 @@
 
 .view-more-button,
 .project-link {
-  background-color: #007bff; 
+  background-color: #007bff;
   border: none;
   padding: 10px 10px;
   text-align: center;
@@ -160,13 +160,11 @@
 .view-more-button:hover,
 .project-link:hover {
   background-color: #0056b3; /* Darker shade for hover */
-  transform: scale(1.1);  /* zoom effect */
+  transform: scale(1.1); /* zoom effect */
 }
 
 h2,
 strong,
-p{
-  color: #4b0082
+p {
+  color: #4b0082;
 }
-
-

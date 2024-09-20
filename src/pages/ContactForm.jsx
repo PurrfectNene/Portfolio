@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import ReactiveButton from "reactive-button";
 import "./ContactForm.css";
 import emailjs from "emailjs-com";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function ContactForm() {
   const form = useRef();
@@ -37,7 +38,7 @@ export default function ContactForm() {
 
   return (
     <div className="contact-form-container">
-      {/* Location Section on the Left */}
+      {/* Location section (left) */}
       <div className="location">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11806.80362674868!2d4.850186399999999!3d52.379189499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609d3f0c1d399%3A0xd4f2f1c4eaa08cfc!2sAmsterdam!5e0!3m2!1sen!2snl!4v1684242212328!5m2!1sen!2snl"
@@ -48,11 +49,13 @@ export default function ContactForm() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-        <h6 style={{color: "#4B0082", fontFamily: "Hey-comic"}}>Location: Amsterdam, Netherlands, NH</h6>
+        <h6 style={{ color: "#4B0082", fontFamily: "Hey-comic" }}>
+        <i className="bi bi-geo-alt-fill"/> Amsterdam, Netherlands, NH
+        </h6>
         {/* <p style={{color: "#4B0082", fontFamily: "Hey-comic"}}>Amsterdam, Netherlands, NH</p> */}
       </div>
 
-      {/* Contact Form Section on the Right */}
+      {/* Contact form section (right) */}
       <form className="form" ref={form} onSubmit={sendEmail}>
         <div className="name-email">
           <div className="name">

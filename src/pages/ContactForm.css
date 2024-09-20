@@ -9,16 +9,16 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px; /* Increased space between location and form */
-  padding: 40px; /* Increased padding around the container */
-  max-width: 1600px; /* Increased maximum width */
-  width: 100%; /* Ensures the container takes full width */
-  box-sizing: border-box; /* Ensures padding is included in the width */
+  gap: 40px; /* Space between location and form */
+  padding: 40px; /* Padding around the container */
+  max-width: 1600px;
+  width: 100%; /* The container takes full width */
+  box-sizing: border-box; /* Padding is included in the width */
 }
 
 .location {
   flex: 4; /* Increased flex to make it bigger */
-  max-width: 600px; /* Increased max width for the location section */
+  max-width: 600px; /* Max width for the location section */
   text-align: center;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .send-button button {
-  background-color: #007bff; 
+  background-color: #007bff;
   border: none;
   padding: 10px 20px;
   text-align: center;
