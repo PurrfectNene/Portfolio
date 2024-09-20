@@ -1,0 +1,35 @@
+[
+  {
+    "project_name": "Gotta Win Em All",
+    "date": "Dec-2023",
+    "description": "The game initializes by setting up event listeners for the start and restart buttons. When the game starts, it transitions from the intro screen to the game screen and sets up event listeners for user choices (scissors, paper, rock).<br><br>When a user makes a choice, the CPU randomly selects its move, and the game determines the outcome (win, lose, tie). The game manages state across components using a class-based structure, tracks scores, and handles transitions between rounds and screens.<br><br>It also includes image updates and animations to display the round outcomes and final results.",
+    "technologies": ["GitHub", "HTML", "CSS", "JavaScript"],
+    "link": "https://purrfectnene.github.io/Project1-rock-paper-scissors-game/",
+    "image": "../public/Images/gotta-win-em-all.png"
+  },
+  {
+    "project_name": "PlantsPedia",
+    "date": "Feb-2024",
+    "description": "PlantsPedia is a platform that helps plant lovers find their next botanical addition for their home. Users can share their knowledge by creating new plant cards with detailed information or by commenting on cards created by others, fostering a vibrant community. I developed it collaboratively with one collaborator, using different Git branches, and merging after review and agreement.<br><br><strong>Frontend Development:</strong><br><br>Developed in React with JavaScript, HTML, and CSS, the platform includes seven components and six pages. Axios handles HTTP requests (GET, POST, PUT, DELETE) for REST APIs, verified through Postman testing, allowing users to edit, delete, and comment on plant information. Design planning was done using Figma, and task management was efficient with the Kanban Agile methodology. Additionally, Bootstrap ensured a robust, responsive user experience.<br><br><strong>Backend Implementation:</strong><br><br>The backend operates using the JSON-Server library, a handy tool for generating a mock server to handle HTTP requests, ideal for prototyping and testing purposes. JSON-Server mimics a RESTful API to effectively manage CRUD operations, ensuring smooth data handling and interaction.<br><br>PlantsPedia symbolizes a blend of modern web tech and methods, resulting in a user-friendly app. Our project is hosted on GitHub, with different repos for frontend and backend, and deployed smoothly via Netlify.",
+    "technologies": ["GitHub", "HTML", "CSS", "JavaScript", "React", "MongoDB"],
+    "link": "https://plantspedia.netlify.app/",
+    "image": "../public/Images/plantspedia.png"
+  },
+  {
+    "project_name": "Italiamo",
+    "date": "May-2024",
+    "description": "Italiamo provides travellers with inspiration for destinations across Italy, offering recommendations for specific regions and cities. In addition to cultural attractions, travellers can explore suggestions for dining and relaxation, ensuring a comprehensive travel experience.<br><br>Developed collaboratively with two collaborators, we utilized separate Git branches, merging changes after review and agreement. I also served as the project manager for the endeavor.<br><br><strong>Frontend Development:</strong><br><br>Developed in React with JavaScript, HTML, and CSS, the platform incorporates seventeen components and approximately 20 pages. Axios manages HTTP requests (GET, POST, PUT, DELETE) for REST APIs, verified through Postman testing. Design planning was conducted using Figma, and task management was streamlined with the Kanban Agile methodology. Additionally, Ant Design, Motion, and Tailwind CSS were utilized to ensure a robust, responsive user experience. Context was also implemented, facilitating state management across components and enhancing data sharing efficiency.<br><br>The frontend has been deployed on Netlify.<br><br><strong>Backend Implementation:</strong><br><br>Developed with Express.js and Node.js, the backend was carefully built, combining strong models, detailed routing, and smart middleware. MongoDB ensured it could grow, and Cloudinary handled images well. Security measures protected user logins and registrations. Deployed on Adaptable.io, our backend is dependable for today's web apps.<br><br>Italiamo embodies a fusion of cutting-edge web technologies and methodologies, culminating in a user-friendly web application. Our project comprises both server-side and frontend components and is hosted on GitHub, with separate repositories for the frontend and backend functionalities.",
+    "technologies": [
+      "GitHub",
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "React",
+      "MongoDB",
+      "Node.js",
+      "Express.js"
+    ],
+    "link": "https://italiamo.netlify.app/",
+    "image": "/Images/italiamo.png"
+  }
+]
