@@ -21,7 +21,7 @@ function App() {
             <Route path="/" element={<Introduction />} />
             <Route path="/projects" element={<ProjectCards />} />
             <Route path="/contact-me" element={<ContactForm />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/*" element={<NotFound />} />
           </Routes>
         </div>
         <div className="main-footer-container">
