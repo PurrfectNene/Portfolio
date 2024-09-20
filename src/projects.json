@@ -5,7 +5,7 @@
     "description": "The game initializes by setting up event listeners for the start and restart buttons. When the game starts, it transitions from the intro screen to the game screen and sets up event listeners for user choices (scissors, paper, rock).<br><br>When a user makes a choice, the CPU randomly selects its move, and the game determines the outcome (win, lose, tie). The game manages state across components using a class-based structure, tracks scores, and handles transitions between rounds and screens.<br><br>It also includes image updates and animations to display the round outcomes and final results.",
     "technologies": ["GitHub", "HTML", "CSS", "JavaScript"],
     "link": "https://purrfectnene.github.io/Project1-rock-paper-scissors-game/",
-    "image": "../public/Images/gotta-win-em-all.png"
+    "image": "/Images/gotta-win-em-all.png"
   },
   {
     "project_name": "PlantsPedia",
@@ -13,7 +13,7 @@
     "description": "PlantsPedia is a platform that helps plant lovers find their next botanical addition for their home. Users can share their knowledge by creating new plant cards with detailed information or by commenting on cards created by others, fostering a vibrant community. I developed it collaboratively with one collaborator, using different Git branches, and merging after review and agreement.<br><br><strong>Frontend Development:</strong><br><br>Developed in React with JavaScript, HTML, and CSS, the platform includes seven components and six pages. Axios handles HTTP requests (GET, POST, PUT, DELETE) for REST APIs, verified through Postman testing, allowing users to edit, delete, and comment on plant information. Design planning was done using Figma, and task management was efficient with the Kanban Agile methodology. Additionally, Bootstrap ensured a robust, responsive user experience.<br><br><strong>Backend Implementation:</strong><br><br>The backend operates using the JSON-Server library, a handy tool for generating a mock server to handle HTTP requests, ideal for prototyping and testing purposes. JSON-Server mimics a RESTful API to effectively manage CRUD operations, ensuring smooth data handling and interaction.<br><br>PlantsPedia symbolizes a blend of modern web tech and methods, resulting in a user-friendly app. Our project is hosted on GitHub, with different repos for frontend and backend, and deployed smoothly via Netlify.",
     "technologies": ["GitHub", "HTML", "CSS", "JavaScript", "React", "MongoDB"],
     "link": "https://plantspedia.netlify.app/",
-    "image": "../public/Images/plantspedia.png"
+    "image": "/Images/plantspedia.png"
   },
   {
     "project_name": "Italiamo",
