@@ -6,7 +6,7 @@ function Sidenav() {
     <div className="sidenav">
       <div className="avatar-container">
         <div>
-          <img className="avatar" src="public/Images/Avatar.png" />
+          <img className="avatar" src="/Images/Avatar.png" />
         </div>
 
         {/* 
@@ -29,7 +29,7 @@ function Sidenav() {
           </a>
         </div> } 
         */}
-        
+
       </div>
 
       <div className="links">
